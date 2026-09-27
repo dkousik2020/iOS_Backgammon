@@ -1,6 +1,3 @@
-# iOS Backgammon
-
-A native iOS Backgammon game powered by a **GNU Backgammon (GNUbg)–inspired engine**, built entirely with Swift and SwiftUI.
 
 ## Features
 
