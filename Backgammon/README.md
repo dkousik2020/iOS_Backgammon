@@ -2,7 +2,7 @@
 ## Features
 
 - **Full backgammon rules** — bar entry, bearing off, hitting blots, doubles (4 moves)
-- **GNUbg-style AI** — heuristic position evaluation covering pip count, blot danger, primes, anchors, and home-board coverage; selects the best move via 1-ply look-ahead
+- **AI** — heuristic position evaluation covering pip count, blot danger, primes, anchors, and home-board coverage; selects the best move via 1-ply look-ahead
 - **Interactive SwiftUI board** — tap a checker to select it, then tap a highlighted destination to move
 - **Visual feedback** — selected checker highlighted in yellow; valid destinations highlighted in green
 - **Pip counter** — live pip counts for both sides displayed in the control bar
@@ -18,7 +18,7 @@ Backgammon/
     ├── BackgammonApp.swift         App entry point (@main)
     ├── ContentView.swift           Root SwiftUI view
     ├── Game/
-    │   ├── BackgammonEngine.swift  GNUbg-inspired engine: move gen, evaluation, AI
+    │   ├── BackgammonEngine.swift  move gen, evaluation, AI
     │   └── GameState.swift         Observable state: turn flow, human input, AI trigger
     ├── Views/
     │   ├── BoardView.swift         Full board layout, point columns, bar, bear-off
@@ -28,7 +28,7 @@ Backgammon/
 
 ## Engine Details
 
-`BackgammonEngine.swift` follows GNUbg conventions:
+`BackgammonEngine.swift` conventions:
 
 | Feature | Implementation |
 |---|---|
